@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f78a500af5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>{{title}}</title>
+</head>
+<nav class="w-100 navbar navbar-expand-lg thu-nav thu-shadow-trigger">
+    <div class="container-fluid">
+        <img src="{{url_for('static', filename='img/thu3d-small.png')}}" style="width:6em">
+        <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#thu_nav" aria-controls="thu_nav" aria-expanded="false" aria-label="Toggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="thu_nav">
+            <div class="w-100 d-flex justify-content-end navbar-nav">
+                <a class="nav-link mx-5 thu-bold thu-highlight" href="#">{{LOCALE['About']}}</a>
+                <a class="nav-link mx-5 thu-bold thu-highlight" href="#">{{LOCALE['Services']}}</a>
+                <a class="nav-link mx-5 thu-bold thu-highlight" href="#">{{LOCALE['Business']}}</a>
+                <a class="nav-link mx-5 thu-bold thu-highlight" href="#">{{LOCALE['Contact']}}</a>
+                <a class="nav-link mx-5 thu-bold thu-highlight" href="#">{{LOCALE['Career']}}</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<body class="{{body_type}} bg-warning">
+<div class="thu-shadow bg-white" style="">
+    {%block content%}
+    {%endblock%}
+</div>
+</body>
+<footer class="h-100 w-100 thu-foot bg-warning">
+    <div class="d-flex align-items-center justify-content-center"">
+        <div class="row">
+            <h1 class="col-12 my-3" align="center">Footer Goes Here. Is Stick.</h1>
+            <h1 class="col-12 my-3" align="center">Footer Goes Here. Is Stick.</h1>
+            <h1 class="col-12 my-3" align="center">Footer Goes Here. Is Stick.</h1>
+        </div>
+    </div>
+</footer>
+<div class="my-3 px-3 thu-contact">
+    <div class="d-flex align-items-center align-items-center">
+        <span>
+            <i class="fa-brands fa-whatsapp"></i>
+            Contact Goes Here. Is Fix.
+        </span>
+    </div>
+</div>
+<div class="my-3 px-3 thu-copyright">
+    <div class="d-flex align-items-center align-items-center">
+        <span class="copyright">
+            © {{lunar}} {{solar}} by Caniggia Syabil @ THU. All Right Reserved.
+        </span>
+    </div>
+</div>
+<script src="{{url_for('static', filename='js/ngentod.js')}}"></script>
+</html>
