@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f78a500af5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active container-fluid" data-bs-interval="1000" align="center">
+            <img src="{{url_for('static',filename='img/cust1.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust2.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust3.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust4.png')}}" class="mx-5" style="max-width:9%">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000" align="center">
+            <img src="{{url_for('static',filename='img/cust5.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust6.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust7.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust8.png')}}" class="mx-5" style="max-width:9%">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000" align="center">
+            <img src="{{url_for('static',filename='img/cust9.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust10.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust11.png')}}" class="mx-5" style="max-width:9%">
+            <img src="{{url_for('static',filename='img/cust12.png')}}" class="mx-5" style="max-width:9%">
+        </div>
+    </div>
+</div>
+</body>
+</html>
