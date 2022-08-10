@@ -99,24 +99,11 @@ nav-bar-toggler
     position: sticky;
     bottom: 0;
     z-index: -1;
-
 }
 
 .none{
     background: rgb(251,227,44);
     background: linear-gradient(175deg, rgba(251,227,44,1) 0%, rgba(9,9,121,1) 75%);
-}
-
-.thu-copyright{
-    position: fixed;
-    left: 3%;
-    bottom: 1.5%;
-}
-
-.thu-contact{
-    position: fixed;
-    right: 3%;
-    bottom: 1.5%;
 }
 
 .thu-bold{
@@ -127,8 +114,13 @@ nav-bar-toggler
 
 .thu-big {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
     color: var(--bay-o-many);
+}
+
+.thu-small {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
 }
 
 .thu-sect {

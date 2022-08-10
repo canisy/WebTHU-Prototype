@@ -1,7 +1,7 @@
 {%extends "base.html"%}
 {%block content%}
-<section class="h-100 w-100 d-flex align-items-center justify-content-center">
-    <div id="thu_head_caro" class="carousel slide" data-bs-ride="carousel">
+<section class="h-100 w-100 d-flex align-items-center justify-content-center mb-3">
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-pause="false">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
                 <img src="{{url_for('static', filename='img/open1.jpg')}}" class="d-block w-100">
@@ -14,201 +14,225 @@
             </div>
         </div>
         <div class="w-100 d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
-            <h1 class="thu-bold" style="color:var(--yamabuki);">
-                EDIT HEADER DISINI
+            <h1 class="thu-bold" align="center" style="color:var(--yamabuki);">
+                PT. TRISMALINDO HANIFA UTAMA
             </h1>
         </div>
     </div>
 </section>
-<h3 class="thu-big thu-sect mx-5 mb-3 mt-5 py-1 px-1" align="center">Klien Kami</h3>
-<section class="h-100 w-100 d-flex align-items-center justify-content-center">
-    <div id="thu_cust_caro" class="carousel slide d-flex align-items-center" data-bs-ride="carousel" style="height:9em">
-        <div class="carousel-inner d-flex align-items-center">
-            <div class="carousel-item active" align="center">
-                <img src="{{url_for('static', filename='img/cust1.png')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust2.png')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust3.png')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust4.png')}}" class="img-fluid img-cust mx-5 my-2">
-            </div>
-            <div class="carousel-item" align="center">
-                <img src="{{url_for('static', filename='img/cust5.png')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust6.svg')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust7.svg')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust8.svg')}}" class="img-fluid img-cust mx-5 my-2">
-            </div>
-            <div class="carousel-item" align="center">
-                <img src="{{url_for('static', filename='img/cust9.svg')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust10.svg')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust11.svg')}}" class="img-fluid img-cust mx-5 my-2">
-                <img src="{{url_for('static', filename='img/cust12.svg')}}" class="img-fluid img-cust mx-5 my-2">
+<hr style="color:transparent;">
+<section class="container d-flex align-items-center justify-content-center my-5 px-0">
+    <div class="w-100 row row-cols-1 d-flex align-items-center justify-content-center">
+        <div class="col d-flex align-items-center justify-content-center pb-1 pt-5">
+            <h3 class="thu-big">Klien Kami</h3>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center px-0">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active container-fluid" data-bs-interval="5000" align="center">
+                        <img src="{{url_for('static',filename='img/cust1.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust2.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust3.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust4.png')}}" class="mx-5" style="max-width:9em">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000" align="center">
+                        <img src="{{url_for('static',filename='img/cust5.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust6.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust7.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust8.png')}}" class="mx-5" style="max-width:9em">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000" align="center">
+                        <img src="{{url_for('static',filename='img/cust9.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust10.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust11.png')}}" class="mx-5" style="max-width:9em">
+                        <img src="{{url_for('static',filename='img/cust12.png')}}" class="mx-5" style="max-width:9em">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<h3 class="thu-big mx-5 mb-3 mt-5 py-1 px-1" align="center">Siapa Kami?</h3>
-<section class="row py-3 px-3">
-    <div class="col-sm-12 col-md-6 d-flex justify-content-center py-3 px-5">
-        <p>
-            PT. Indah Logistik adalah perusahaan yang bergerak dalam bidang usaha jasa angkutan barang dengan tujuan
-            seluruh Provinsi dan Kabupaten yang ada di Indonesia, serta melayani pengiriman barang dan dokumen ke luar
-            negeri. Saat ini kami menguasai hampir 100% daerah tujuan pengiriman barang di Indonesia, dari Sabang sampai
-            Merauke. Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-        </p>
-    </div>
-    <div class="col-sm-12 col-md-6 d-flex justify-content-center py-3 px-5">
-        <img src="{{url_for('static',filename='img/about.jpeg')}}"
-             style="max-width:75%; height:auto; border-radius:10%;"
-             class="img-fluid img-thumbnail">
-    </div>
-</section>
-<h3 class="thu-big mx-5 mb-3 mt-5 py-1 px-1" align="center">Mengapa Trismalindo?</h3>
-<section class="text-center my-5">
-    <div class="row gx-lg-5 my-5">
-        <div class="col-md-4 col-xs-12 my-5">
-            <div class="card thu-shadow h-100">
-                <div class="d-flex justify-content-center" style="margin-top:-3.5em">
-                    <div class="p-4 rounded-circle shadow-lg d-inline-block"
-                         style="background:var(--yamabuki); color:var(--bay-o-many)">
-                        <i class="fas fa-headset fa-4x"></i>
+<section class="container d-flex align-items-center justify-content-center my-5 px-0">
+    <div class="w-100 row row-cols-1 d-flex align-items-center justify-content-center">
+        <div class="col d-flex align-items-center justify-content-center pb-1 pt-5">
+            <h3 class="thu-big">Mengapa Trismalindo?</h3>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center px-0">
+            <div class="row gx-lg-5 mt-3 mx-3 mx-sm-3 mx-lg-0">
+                <div class="col-md-4 col-xs-12 mt-5">
+                    <div class="card border-0 thu-shadow h-100">
+                        <div class="d-flex justify-content-center" style="margin-top:-3.5em">
+                            <div class="p-4 rounded-circle shadow-lg d-inline-block"
+                                 style="background:var(--yamabuki); color:var(--bay-o-many)">
+                                <i class="fas fa-headset fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="card-body"><h3 class="card-title thu-bold" style="color:var(--yamabuki)"
+                                                   align="center">Support 24/7</h3>
+                            <p class="card-text thu-small">
+                                Laudantium totam quas cumque pariatur at doloremque hic quos quia eius. Reiciendis optio
+                                minus mollitia rerum labore facilis inventore voluptatem ad, quae quia sint. Ullam.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="card-body"><h3 class="card-title">Support 24/7</h3>
-                    <p class="card-text">
-                        Laudantium totam quas cumque pariatur at doloremque hic quos quia eius. Reiciendis optio
-                        minus mollitia rerum labore facilis inventore voluptatem ad, quae quia sint. Ullam.
+                <div class="col-md-4 col-xs-12 mt-5">
+                    <div class="card border-0 thu-shadow h-100">
+                        <div class="d-flex justify-content-center" style="margin-top:-3.5em">
+                            <div class="p-4 rounded-circle shadow-lg d-inline-block"
+                                 style="background:var(--yamabuki); color:var(--bay-o-many)">
+                                <i class="fas fa-shield-alt fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="card-body"><h3 class="card-title thu-bold" style="color:var(--yamabuki)"
+                                                   align="center">Safe And Solid</h3>
+                            <p class="card-text thu-small">
+                                Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio
+                                soluta,
+                                quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 mt-5">
+                    <div class="card border-0 thu-shadow h-100">
+                        <div class="d-flex justify-content-center" style="margin-top:-3.5em">
+                            <div class="p-4 rounded-circle shadow-lg d-inline-block"
+                                 style="background:var(--yamabuki); color:var(--bay-o-many)">
+                                <i class="fas fa-clock fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="card-body"><h3 class="card-title thu-bold" style="color:var(--yamabuki)"
+                                                   align="center">Extremly Fast</h3>
+                            <p class="card-text thu-small">
+                                Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic
+                                voluptatibus
+                                dolores exercitationem? Facilis debitis aspernatur amet nisi?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container d-flex align-items-center justify-content-center my-5 px-0">
+    <div class="w-100 row row-cols-1 d-flex align-items-center justify-content-center">
+        <div class="col d-flex align-items-center justify-content-center pb-3 pt-5">
+            <h3 class="thu-big">Layanan Kami</h3>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center px-0">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
+                             style="color:var(--bay-o-many)">
+                            <i class="fas fa-truck fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-3">
+                        <p class="thu-small text-center">Pengiriman Darat</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
+                             style="color:var(--bay-o-many)">
+                            <i class="fas fa-ship fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-3">
+                        <p class="thu-small text-center">Pengiriman Laut</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
+                             style="color:var(--bay-o-many)">
+                            <i class="fas fa-plane fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-3">
+                        <p class="thu-small text-center">Pengiriman Udara</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
+                             style="color:var(--bay-o-many)">
+                            <i class="fas fa-earth-americas fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-3">
+                        <p class="thu-small text-center">Ekspor & Custom Clearance</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
+                             style="color:var(--bay-o-many)">
+                            <i class="fas fa-boxes-stacked fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-3">
+                        <p class="thu-small text-center">Solusi Pergudangan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container d-flex align-items-center justify-content-center my-5 px-0">
+    <div class="w-100 row row-cols-1 d-flex align-items-center justify-content-center">
+        <div class="col d-flex align-items-center justify-content-center pb-1 pt-3">
+            <h3 class="thu-big">Siapa Kami?</h3>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center px-0">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 d-flex justify-content-center mb-3 mb-sm-3 mb-lg-0">
+                    <img src="{{url_for('static',filename='img/about.jpeg')}}"
+                         style="max-width:75%; height:auto; border-radius:10%;"
+                         class="border-0 img-fluid img-thumbnail">
+                </div>
+                <div class="col-md-12 col-lg-6 d-flex align-items-center justify-content-center">
+                    <p class="px-5 px-sm-5 px-lg-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin leo id tortor
+                        finibus, id
+                        aliquet nulla molestie. Aenean ac nisi consequat, tincidunt lectus eget, varius nibh. Maecenas
+                        ipsum
+                        justo, bibendum quis sem id, consectetur aliquam metus. Nullam ac aliquam tellus. Cras viverra
+                        volutpat iaculis. Morbi bibendum gravida velit vel consectetur. Sed nisl mi, rutrum sit amet
+                        ultrices at, sollicitudin nec massa. Nunc varius est eu mauris mattis sodales id sodales ipsum.
+                        Etiam leo ligula, rutrum ut erat accumsan, dapibus dictum libero. Phasellus ac tortor elit.
+                        Fusce
+                        lacinia porttitor lacus et laoreet.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-xs-12 my-5">
-            <div class="card thu-shadow h-100">
-                <div class="d-flex justify-content-center" style="margin-top:-3.5em">
-                    <div class="p-4 rounded-circle shadow-lg d-inline-block"
-                         style="background:var(--yamabuki); color:var(--bay-o-many)">
-                        <i class="fas fa-shield-alt fa-4x"></i>
-                    </div>
-                </div>
-                <div class="card-body"><h3 class="card-title">Safe And Solid</h3>
-                    <p class="card-text">
-                        Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio soluta,
-                        quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-xs-12 my-5">
-            <div class="card thu-shadow h-100">
-                <div class="d-flex justify-content-center" style="margin-top:-3.5em">
-                    <div class="p-4 rounded-circle shadow-lg d-inline-block"
-                         style="background:var(--yamabuki); color:var(--bay-o-many)">
-                        <i class="fas fa-clock fa-4x"></i>
-                    </div>
-                </div>
-                <div class="card-body"><h3 class="card-title">Extremely Fast</h3>
-                    <p class="card-text">
-                        Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic voluptatibus
-                        dolores exercitationem? Facilis debitis aspernatur amet nisi?
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
-<h3 class="thu-big mx-5 mb-3 mt-5 py-1 px-1" align="center">Kami Melayani</h3>
-<section class="container text-center mx-5 my-5">
-    <div class="row">
-        <div class="col">
-            <div class="d-flex justify-content-center">
-                <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
-                     style="color:var(--bay-o-many)">
-                    <i class="fas fa-truck fa-3x"></i>
+<section class="container d-flex align-items-center justify-content-center my-5 px-0">
+    <div class="w-100 row row-cols-1 d-flex align-items-center justify-content-center">
+        <div class="col d-flex align-items-center justify-content-center pb-3 pt-3">
+            <h3 class="thu-big">Solusi Bisnis</h3>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center px-0">
+            <div class="card border-0 thu-shadow mx-5" style="width: 18rem;">
+                <img src="{{url_for('static',filename='img/cust1.png')}}" class="card-img-top">
+                <div class="card-body">
+                    <a href="#" class="btn btn-warning thu-bold d-flex align-items-center justify-content-center"
+                       style="color:var(--bay-o-many);">Vendor</a>
                 </div>
             </div>
-            <div class="mx-3 my-3">
-                <span>Pengiriman Darat</span>
-            </div>
-        </div>
-        <div class="col">
-            <div class="d-flex justify-content-center">
-                <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
-                     style="color:var(--bay-o-many)">
-                    <i class="fas fa-ship fa-3x"></i>
-                </div>
-            </div>
-            <div class="mx-3 my-3">
-                <span>Pengiriman Laut</span>
-            </div>
-        </div>
-        <div class="col">
-            <div class="d-flex justify-content-center">
-                <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
-                     style="color:var(--bay-o-many)">
-                    <i class="fas fa-plane fa-3x"></i>
-                </div>
-            </div>
-            <div class="mx-3 my-3">
-                <span>Pengiriman Udara</span>
-            </div>
-        </div>
-        <div class="col">
-            <div class="d-flex justify-content-center">
-                <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
-                     style="color:var(--bay-o-many)">
-                    <i class="fas fa-earth-americas fa-3x"></i>
-                </div>
-            </div>
-            <div class="mx-3 my-3">
-                <span>Ekspor & Custom Clearance</span>
-            </div>
-        </div>
-        <div class="col">
-            <div class="d-flex justify-content-center">
-                <div class="p-3 rounded-circle bg-transparent d-inline-block border border-warning border-5"
-                     style="color:var(--bay-o-many)">
-                    <i class="fas fa-boxes-stacked fa-3x"></i>
-                </div>
-            </div>
-            <div class="mx-3 my-3">
-                <span>Solusi Pergudangan</span>
-            </div>
-        </div>
-    </div>
-</section>
-<h3 class="thu-big mx-5 mb-3 mt-5 py-1 px-1" align="center">Solusi Bisnis</h3>
-<section class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <div class="d-flex justify-content-center align-items-center">
-                <img src="https://picsum.photos/id/237/320/240" style="width:300%; height:auto; border-radius:5%;"
-                     class="img-fluid"/>
-                <div class="m-5" style="position: absolute; color: white;">
-                    <h3 class="thu-font">Sebagai Customer</h3>
-                    <p class="thu-font">PT Pos Logistik has a wide range of solutions that can be tailored to your
-                        business's particular needs.</p>
-                    <button type="button"
-                            class="btn btn-primary btn-lg bg-warning border border-warning shadow-lg thu-font">
-                        Bergabung Sebagai Klien →
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="d-flex justify-content-center align-items-center">
-                <img src="https://picsum.photos/id/237/320/240" style="width:300%; height:auto; border-radius:5%;"
-                     class="img-fluid"/>
-                <div class="m-5" style="position: absolute; color: white;">
-                    <h3 class="thu-font">Sebagai Vendor</h3>
-                    <p class="thu-font">As one of the largest Logistics companies in Indonesia, we open the opportunity
-                        for your company to become a partner provider for us.</p>
-                    <button type="button"
-                            class="btn btn-primary btn-lg bg-warning border border-warning shadow-lg thu-font">
-                        Bergabung Sebagai Vendor →
-                    </button>
+            <div class="card border-0 thu-shadow mx-5" style="width: 18rem;">
+                <img src="{{url_for('static',filename='img/cust1.png')}}" class="card-img-top">
+                <div class="card-body">
+                    <a href="#" class="btn btn-warning thu-bold d-flex align-items-center justify-content-center"
+                       style="color:var(--bay-o-many);">Klien</a>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
 </section>
 {%endblock%}

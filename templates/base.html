@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Ubuntu&display=swap"
+          rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f78a500af5.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>{{title}}</title>
@@ -32,35 +33,78 @@
         </div>
     </div>
 </nav>
-<body class="{{body_type}} bg-warning">
-<div class="thu-shadow bg-white" style="">
-    {%block content%}
-    {%endblock%}
+<body class="{{body_type}}">
+<div class="pb-1 bg-white thu-shadow">{%block content%}{%endblock%}
+    <hr style="color:transparent;">
 </div>
-</body>
-<footer class="h-100 w-100 thu-foot bg-warning">
-    <div class="d-flex align-items-center justify-content-center"">
-        <div class="row">
-            <h1 class="col-12 my-3" align="center">Footer Goes Here. Is Stick.</h1>
-            <h1 class="col-12 my-3" align="center">Footer Goes Here. Is Stick.</h1>
-            <h1 class="col-12 my-3" align="center">Footer Goes Here. Is Stick.</h1>
+<section class="thu-foot">
+    <div class="d-flex align-items-center justify-content-center mt-3">
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 mb-5 px-3">
+                <div class="col d-flex flex-column align-items-top justify-content-start my-3">
+                    <img src="{{url_for('static', filename='img/thu.svg')}}" style="height:6em;">
+                    <br>
+                    <span class="thu-big">PT. Trismalindo Hanifa Utama</span>
+                    <div class="pt-3">
+                        <i class="fa-brands fa-facebook fa-2x mx-2"></i>
+                        <i class="fa-brands fa-twitter fa-2x mx-2"></i>
+                        <i class="fa-brands fa-instagram fa-2x mx-2"></i>
+                        <i class="fa-brands fa-linkedin fa-2x mx-2"></i>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column align-items-top justify-content-start my-3">
+                    <h3>Our Service:</h3>
+                    <br>
+                    <span>Supply Chain Management</span>
+                    <br>
+                    <span>Custom Clearance</span>
+                    <br>
+                    <span>Domestics D2D Distribution</span>
+                </div>
+                <div class="col d-flex flex-column align-items-top justify-content-start my-3">
+                    <h3>Contact Us:</h3>
+                    <br>
+                    <div class="d-flex flex-row justify-content-center mb-3">
+                        <p class="d-none d-lg-block me-3">
+                            Address:
+                        </p>
+                        <div>
+                            <p class="text-center text-lg-start m-0">
+                                Jl. Panca V, No.61, RT/RW: 005/01
+                            </p>
+                            <p class="text-center text-lg-start m-0">
+                                Kel. Serdang, Kec. Kemayoran
+                            </p>
+                            <p class="text-center text-lg-start m-0">
+                                Jakarta Pusat, Indonesia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start ms-1">
+                        <i class="fa-brands fa-whatsapp mx-2"></i>
+                        <span>+6283806665400</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start ms-1">
+                        <i class="fa-solid fa-envelope mx-2"></i>
+                        <span>admin@trismalindo.co.id</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</footer>
-<div class="my-3 px-3 thu-contact">
-    <div class="d-flex align-items-center align-items-center">
-        <span>
-            <i class="fa-brands fa-whatsapp"></i>
-            Contact Goes Here. Is Fix.
-        </span>
-    </div>
-</div>
-<div class="my-3 px-3 thu-copyright">
-    <div class="d-flex align-items-center align-items-center">
-        <span class="copyright">
+</section>
+<section class="fixed-bottom d-flex align-items-center justify-content-center justify-content-lg-between p-3">
+    <div class="align-self-end thu-time-delta">
+        <span class="thu-small">
             © {{lunar}} {{solar}} by Caniggia Syabil @ THU. All Right Reserved.
         </span>
     </div>
-</div>
+    <div class="d-none d-lg-block thu-contact">
+        <span>
+            <i class="fa-brands fa-whatsapp fa-4x"></i>
+        </span>
+    </div>
+</section>
+</body>
 <script src="{{url_for('static', filename='js/ngentod.js')}}"></script>
 </html>

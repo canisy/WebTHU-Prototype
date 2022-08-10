@@ -48,7 +48,7 @@ $(document).ready(function(){
     $(function(){
         $(document).scroll(function(){
             $(".thu-nav").toggleClass(['radiant', 'thu-shadow-trigger-on'],
-                $(this).scrollTop() > 90
+                $(this).scrollTop() > 300
             );
         });
     });
